@@ -1,15 +1,79 @@
-*{
-    padding: 0px;
-    background-color: black;
+body {
+    background-color: rgb(170, 140, 140);
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
 
+h1 {
+    text-align: center;
 }
-img{
-    display: flexbox;
-    height: 200px;
-    width: 200px;
+
+/* Centralizar imagens responsivamente */
+img {
+    display: block;
+    max-width: 200px;
+    width: 100%;
+    margin: 0 auto;
 }
-P{
-    color:aliceblue;
-    text-align: justify;
-    width: 2000px;;
+
+/* Parágrafos centralizados e adaptáveis */
+p {
+    color: aliceblue;
+    text-align: center;
+    padding: 10px;
+    max-width: 90%;
+    margin: auto;
+}
+
+/* Menu de navegação mais flexível */
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* quebra em telas pequenas */
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    background: rgba(0,0,0,0.3);
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: rgba(0,0,0,0.5);
+}
+
+/* Iframes centralizados */
+iframe {
+    display: block;
+    max-width: 90%;
+    height: auto;
+    margin: 20px auto;
+}
+
+/* Inputs dentro de section */
+section input {
+    display: block;
+    max-width: 200px;
+    width: 100%;
+    margin: 20px auto;
+}
+
+/* --- Responsividade --- */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    img {
+        max-width: 150px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
 }
