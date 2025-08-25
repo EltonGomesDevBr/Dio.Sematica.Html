@@ -1,0 +1,15 @@
+*{
+    padding: 0px;
+    background-color: black;
+
+}
+img{
+    display: flexbox;
+    height: 200px;
+    width: 200px;
+}
+P{
+    color:aliceblue;
+    text-align: justify;
+    width: 2000px;;
+}
